@@ -11,8 +11,18 @@ public class Main {
 		linkedList.insertBefore(previousNode, afterNode, 30);
 		linkedList.pop();
 		
-		System.out.println("breaking the line");
+		System.out.println("-------------------");
 		linkedList.popLast();
+		linkedList.pop();
+		linkedList.insert(56);
+		LinkedList.Node beforeNode =linkedList.insert(30);
+		LinkedList.Node nextNode=linkedList.insert(70);
+		int searchValue = linkedList.search(70);
+		System.out.println(searchValue);
+		linkedList.insertBefore(beforeNode, nextNode, 40);
+		
+		
+		
 
 		
 	}
