@@ -20,7 +20,11 @@ public class Main {
 		int searchValue = linkedList.search(70);
 		System.out.println(searchValue);
 		linkedList.insertBefore(beforeNode, nextNode, 40);
-		
+		 linkedList.deleteByKey(40);
+		 System.out.println("-------------------");
+		 linkedList.print();
+		 int size = linkedList.size();
+		 System.out.println(size);
 		
 		
 
