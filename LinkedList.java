@@ -68,6 +68,17 @@ public class LinkedList {
 		print();
 
 	}
+	public int peek()
+    {
+        // check for empty stack
+        if (head != null) {
+            return head.data;
+        }
+        else {
+            System.out.println("Stack is empty");
+            return -1;
+        }
+    }
 
 	public int pop() {
 		int popData = 0;
@@ -130,6 +141,25 @@ public class LinkedList {
 			temp = temp.next;
 		}
 		return index ;
+	}
+	
+	public void sort() {
+        Node current = head, index = null;
+        if (head == null) {
+            return;
+        } else {
+            while (current != null) {
+                index = current.next;
+                while (index != null) {
+                    if (current.data > index.data) {
+                        int temp = current.data;
+                        current.data = index.data;
+                        index.data = temp;
+                    }
+                    index = index.next;
+                }
+            }
+        }
 	}
 
 }

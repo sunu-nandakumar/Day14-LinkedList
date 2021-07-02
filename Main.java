@@ -26,8 +26,11 @@ public class Main {
 		 int size = linkedList.size();
 		 System.out.println(size);
 		
+		int peek = linkedList.peek();
+		System.out.println(peek);
 		
-
+		
+		
 		
 	}
 
